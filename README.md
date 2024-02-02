@@ -29,7 +29,7 @@ Backend já está ON proximo passo rodar o front para fazer a integração.
 
 Abrir a pasta: FrontEnd-users-indt
 
-Instalar as dependencias: "**YANR INSTALL**". 
+Instalar as dependencias: "**YARN INSTALL**". 
 
 Feito a instalação de todos os modulos rodar o comando: NPM START
 
