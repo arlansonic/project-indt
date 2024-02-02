@@ -42,11 +42,11 @@ Caso não queira entrar na interface para criar o usuário, pode usar o seeders 
 Vai ser criado 2 usuários 1 com nivel admin e outro com nivel "user".
 
 email: john@example.com
-senha: 123456
+senha: 123456 -
 nivel: user
 
 email: jane@example.com
-password: 123456
+password: 123456 -
 nivel: admin
 
 
