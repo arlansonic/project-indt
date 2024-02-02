@@ -1,16 +1,16 @@
 # project-indt
 
-Primeiro ao entrar no Backend tem que atualizar as dependencias: YARN INSTALL
+Primeiro ao entrar no Backend tem que atualizar as dependencias: **YARN INSTALL**
 
-Depois de Instalado as dependencias executar o comando: *docker compose up --build* além de buildar o projeto, ele também já vai criar automaticamente o banco de dados: 
+Depois de Instalado as dependencias executar o comando: **docker compose up --build** além de buildar o projeto, ele também já vai criar automaticamente o banco de dados: 
 
 Esse comando é somente para buildar a 1º vez, depois pode ser usado normalmente o comando: docker compose up -d
 
 Database: indt-users
 
-Para rodar as Migrations as tabelas que vamos utilizar: Users: *docker-compose exec app npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string,password:string,accessLevel:string*
+Para rodar as Migrations as tabelas que vamos utilizar: Users: **docker-compose exec app npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string,password:string,accessLevel:string**
 
-Proximo comando: docker-compose exec app npx sequelize-cli db:migrate -> Esse comando vai criar as tabelas no banco de dados
+Proximo comando: **docker-compose exec app npx sequelize-cli db:migrate** -> Esse comando vai criar as tabelas no banco de dados
 Containers com as 2 aplicações 
 
 ![image](https://github.com/arlansonic/project-indt/assets/33867391/01415ee3-6235-4fe7-bd67-f2a0418bfc20)
@@ -29,7 +29,7 @@ Backend já está ON proximo passo rodar o front para fazer a integração.
 
 Abrir a pasta: FrontEnd-users-indt
 
-Instalar as dependencias: YANR INSTALL. 
+Instalar as dependencias: **YANR INSTALL**. 
 
 Feito a instalação de todos os modulos rodar o comando: NPM START
 
