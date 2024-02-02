@@ -37,5 +37,8 @@ Feito a instalação de todos os modulos rodar o comando: NPM START
 
 A aplicação frontend vai rodar na porta: 3000
 
+Caso não queia entrar na interface para criar o usuário, pode usar o seeders com o comando: "**docker-compose exec app npx sequelize-cli db:seed:all**" 
+E vai ser criado 2 usuários 1 com nivel admin e outro com nivel "user".
+
 
 
