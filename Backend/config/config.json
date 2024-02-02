@@ -3,8 +3,21 @@
     "username": "root",
     "password": "root",
     "database": "indt-users",
-    "host": "localhost",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "host": "db",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "indt-users",
+    "host": "db",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "root",
+    "database": "indt-users",
+    "host": "db",
+    "dialect": "mysql"
   }
 }

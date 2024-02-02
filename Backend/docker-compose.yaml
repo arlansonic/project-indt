@@ -1,11 +1,35 @@
+version: '3.8'
+
 services:
   db:
     image: mysql:latest
-    environment:
-      MYSQL_ROOT_PASSWORD: root
+    environment:      
+      MYSQL_ROOT_PASSWORD: root      
       MYSQL_DATABASE: indt-users
       MYSQL_PASSWORD: root
+      MYSQL_HOST: db
     ports:
       - "3306:3306"
     volumes:
       - ./mysql:/var/lib/mysql
+
+  initdb:
+    image: mysql:latest
+    command: >
+      bash -c "
+        sleep 10 &&
+        mysql -h db -u root -proot -e 'CREATE DATABASE IF NOT EXISTS `indt-users`'"
+    depends_on:
+      - db
+
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - db
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
