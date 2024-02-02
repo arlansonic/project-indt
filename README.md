@@ -11,8 +11,8 @@ Database: indt-users
 Para rodar as Migrations as tabelas que vamos utilizar: Users: *docker-compose exec app npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string,password:string,accessLevel:string*
 
 Proximo comando: docker-compose exec app npx sequelize-cli db:migrate -> Esse comando vai criar as tabelas no banco de dados
-
 Containers com as 2 aplicações 
+
 ![image](https://github.com/arlansonic/project-indt/assets/33867391/01415ee3-6235-4fe7-bd67-f2a0418bfc20)
 
 Container do Banco Mysql
