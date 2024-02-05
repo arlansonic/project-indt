@@ -35,7 +35,7 @@ Feito a instalação de todos os modulos rodar o comando: NPM START
 
 ![image](https://github.com/arlansonic/project-indt/assets/33867391/dbffbeed-2f0f-402b-8e6c-f5b3f5d9e0fb)
 
-A aplicação frontend vai rodar na porta: 3000
+A aplicação frontend vai rodar na porta: 3001
 
 Caso não queira entrar na interface para criar o usuário, pode usar o seeders com o comando: 
 "**docker-compose exec app npx sequelize-cli db:seed:all**" 
